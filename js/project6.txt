@@ -1,0 +1,9 @@
+T1	R(X), W(X),R(Y), W(Y), COMMIT
+
+T2		R(Y), W(Y), 				ABORT
+
+1. In this example T2 aborts after T1 has committed it's data which was dependent on T1. This is an unrecoverable event.
+
+2. If strict two phase locking was implemented then T1 will need to get an exclusive lock on Y if it plans on writing data to it. If T1 has an exclusive lock on Y then T2 will need to wait until T1 has either committed or aborted to get an exclusive lock of it's own. Essentially T1 and T2 cannot run concurrently if they both need an exclusive lock on the same asset.
+
+3. 2pl is popular because it is a proven system that keeps data safe in a multiple user environment by using the concept of atomicity. It doesn't allow for unrecoverable aborts that may happen in a non strict 2PL system. Strict 2PL also makes aborts easier because it has less of a cascading effect. 

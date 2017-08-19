@@ -1,0 +1,349 @@
+body {font-family: helvetica; margin:0px;}
+h1, h2,h3,h4,h5,p,a,div{display: inline-block;}
+
+div#container
+{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-color: #4B9894;
+}
+
+div#header
+{
+	width: 100%;
+	height: 80px;
+	background-color: #F14A32;
+	color: #FFF;
+}
+
+div#header h1
+{
+	margin-left: 10px;
+	font-style: italic;
+}
+
+div#header img
+{
+	float: right;
+	height: 100%;
+	margin-right: 10px;
+}
+
+div#filter
+{
+	display: inline-block;
+	width: 30%;
+	background-color: #4B9894;
+	overflow: hidden;
+	text-align: center;
+	float: left;
+	padding-bottom: 50px;
+}
+
+div#filter div#filter-header
+{
+	color: #FFF;
+	border-bottom: 5px solid #F14A32;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+div#filter p.label
+{
+	color: #FFF;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 800;
+}
+
+div#filter div.select
+{
+	width: 100%;
+	margin-top: 20px;
+}
+
+div#filter div.select select
+{
+	width: 80%;
+	height: 75px;
+	background-color: #FFF;
+	color: #F14A32;
+	border: solid 0px;
+	border-radius: 20px 20px;
+	font-size: 36px;
+	font-weight: 500;
+	text-align: center;
+	padding: 0 0 0 5%;
+}
+
+div#filter div.select select option
+{
+	text-align: center;
+	margin: 0px auto;
+}
+
+div#content-area
+{
+	position: relative;
+	display: inline-block;
+	width: 70%;
+	overflow: hidden;
+	background-color: #D5E2DA;
+}
+
+div#top-stats
+{
+	width: 100%;
+	float: left;
+
+}
+
+#top-stats .info-container
+{
+	width: 100%;
+}
+
+#top-stats .info-container .company-info
+{
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.company-info #ranking
+{
+	float: left;
+}
+
+.company-info #secondary-info
+{
+	margin-left: 10px;
+	float: left;
+	display: block;
+}
+
+.company-info #ranking h1
+{
+	display: inline-block;
+	float: left;
+	font-weight: 800;
+	font-size: 100px;
+	margin: 0px;
+	color: #FFF;
+
+}
+
+.company-info #secondary-info h2
+{
+	display: block;
+	float: left;
+	font-weight: 800;
+	font-size: 35px;
+	margin:0px;
+	margin-top: 15px;
+	color: #4B9894;
+	text-transform: uppercase;
+
+}
+
+.company-info #secondary-info p
+{
+	display: block;
+	white-space: nowrap;
+	font-size: 17px;
+	font-weight: bold;
+	margin:0px;
+	overflow: hidden;
+	clear: both;
+	color: #F1603A;
+	text-transform: uppercase;
+	max-width: 400px;
+
+}
+
+#secondary-info p span
+{
+	margin-left: 10px;
+	float: right;
+}
+
+#top-stats .info-container2
+{
+	width: 100%;
+	float: left;
+	background-color: #F4F6F4;
+	overflow: hidden;
+}
+
+#top-stats .info-container2 .company-info2
+{
+	margin: 10px;
+	width: 100%;
+}
+
+.block
+{
+	display: inline-block;
+	width: 48%;
+	float: left;
+	font-size: 25px;
+	margin:1%;
+	margin-top: 15px;
+	color: #4B9894;
+
+
+}
+
+.block p
+{
+	margin: 0px;
+	display: block;
+	max-width: 400px;
+}
+.block p.slanted{font-style: italic;}
+
+.block p span
+{
+	margin-left: 10px;
+	color: #F1603A;
+	float: right;
+}
+
+#top-stats .info-container3
+{
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+#top-stats .info-container3 .company-info3
+{
+	margin: 10px;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+#your-stats, #their-stats
+{
+	font-weight: bold;
+	color: #F1603A;
+	margin-right: 20px;
+}
+
+.info-container3 #block1
+{
+	color: #4B9894;
+	width: auto;
+}
+
+.info-container3 #block2
+{
+	text-align: center;
+}
+
+#block1 .stats-compare
+{
+	margin: 40px 0px;
+}
+
+#block2 .stats-compare
+{
+	margin-left: -10px;
+	margin-top: 10px;
+	width: 100%;
+	border-left: 5px solid #BDD2C9;
+	color: #F1603A;
+	text-align: center;
+}
+
+#block2 .stats-compare p
+{
+	margin: 0px auto;
+}
+
+div#bottom-left, div#bottom-right
+{
+	width: 50%;
+	float: left;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+div#bottom-left div#list:first-child
+{
+	font-weight: 800;
+}
+
+div#list
+{
+	padding: 10px 0px;
+	width: 100%;
+	background-color: #F4F6F4;
+	margin-bottom: 10px;
+}
+
+div#list p
+{
+	color: #F1603A;
+	font-size: 26px;
+	margin-left: 10px;
+}
+
+div#list p.list-number
+{
+	margin-left: 10px;
+}
+
+div#list p.list-rank
+{
+	float: right;
+	margin-right: 10px;
+	font-weight: 800;
+}
+
+div.stat, div.current
+{
+	width: 240px;
+	padding: 5px;
+	border: solid 1px black;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+div.stat span.data
+{
+	color: red;
+}
+
+div.current span.win
+{
+	font-weight: bold;
+}
+
+div.current span.fail
+{
+	font-weight: normal;
+}
+
+div.rank
+{
+	width: 100%;
+}
+
+div.rank span.rank
+{
+	color: green;
+}
+
+div p#company-name
+{
+	font-size: 20px;
+	font-weight: 600;
+}
+
+div p#company-name span.rank
+{
+	color: #F1603A;
+}
